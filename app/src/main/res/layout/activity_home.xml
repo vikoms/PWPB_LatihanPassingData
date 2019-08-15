@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar" />
+
+    <ImageView
+        android:id="@+id/image_gojek"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/logo_hitam" />
+
+    <ImageView
+        android:id="@+id/imageGomart"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_gojek"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/menu_gomart" />
+
+    <ImageView
+        android:id="@+id/imageGoride"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toEndOf="@+id/imageGomart"
+        app:layout_constraintTop_toBottomOf="@+id/image_gojek"
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/menu_goride" />
+
+    <ImageView
+        android:id="@+id/imageGofood"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageGomart"
+        app:layout_constraintVertical_bias="0.227"
+        app:srcCompat="@drawable/menu_gofood" />
+
+    <ImageView
+        android:id="@+id/imageGosend"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toEndOf="@+id/imageGofood"
+        app:layout_constraintTop_toBottomOf="@+id/imageGoride"
+        app:layout_constraintVertical_bias="0.208"
+        app:srcCompat="@drawable/menu_gosend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
